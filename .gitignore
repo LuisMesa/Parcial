@@ -44,4 +44,15 @@ $RECYCLE.BIN/
 .AppleDesktop
 Network Trash Folder
 Temporary Items
+
 .apdisk
+backend/data
+
+.apdisk
+backend/node_modules
+
+.apdisk
+backend/.idea
+
+.apdisk
+backend/config.js
