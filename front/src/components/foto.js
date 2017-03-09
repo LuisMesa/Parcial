@@ -15,7 +15,7 @@ class Foto extends Component
     return(
         <div className="col-md-3">
         <div className="boxFoto">
-          <img src={url} alt="Smiley face" width="300" height="300"> </img>
+          <img className="imagen" src={url} alt="Smiley face" width="300" height="300"> </img>
         </div>
         </div>
     );
