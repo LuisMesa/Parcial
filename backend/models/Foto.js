@@ -36,7 +36,7 @@ exports.getAllWithQuery= (req, res) =>
     flickr.photos.search({
       api_key: flickrOptions.api_key,
       page: 1,
-      per_page: 10,
+      per_page: 50,
       oauth_verifier: config.oauth_verifier,
       safe: 1,
       sort: "relevance",

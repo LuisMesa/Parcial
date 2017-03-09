@@ -13,8 +13,10 @@ class Foto extends Component
     var secret=this.props.foto.secret ;
     var url ="http://c1.staticflickr.com/"+farm+"/"+server+"/"+id+"_"+secret+".jpg";
     return(
+        <div className="col-md-3">
         <div className="boxFoto">
-          <img src={url} alt="Smiley face" width="200" height="200"> </img>
+          <img src={url} alt="Smiley face" width="300" height="300"> </img>
+        </div>
         </div>
     );
   }

@@ -20,8 +20,10 @@ class Buscador extends Component {
   render()
   {
     return (
-        <div className="col-md-12">
-          <input type="text" onChange={(event) => this.buscar(event.target.value)}/>
+        <div>
+
+              <input type="text" onChange={(event) => this.buscar(event.target.value)}/>
+
         </div>
     )
   }
