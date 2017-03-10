@@ -9,13 +9,11 @@ const PER_PAGE=6;
 var Flickr = require("flickrapi"),
     flickrOptions = {
       api_key: config.api_key,
-      secret: config.secret,
-      user_id:config.user_id,
-      access_token:config.access_token,
-      access_token_secret:config.access_token_secret
+      secret: config.secret
+
     };
 
-
+//Retorna fotos recientes
 exports.getAll= (req,res)=> {
   Flickr.authenticate(flickrOptions, function(error, flickr) {
     flickr.photos.getRecent({
@@ -32,7 +30,7 @@ exports.getAll= (req,res)=> {
 }
 
 
-
+//Retorna fotos según query
 exports.getAllWithQuery= (req, res) =>
 {
   Flickr.authenticate(flickrOptions, function (error, flickr)
@@ -54,7 +52,7 @@ exports.getAllWithQuery= (req, res) =>
     });
   });
 }
-
+//Implementación recursiva para realizar peticiones y retornar fotos según una consulta (esta función no esta en uso)
 exports.getAllWithQueryColors= (req, res) =>
 {
   var data=[];
@@ -92,7 +90,7 @@ function recursiva(req,res,data,i)
     recursiva(req,res,data,i)
   }
 }
-
+//Implementación ciclica para realizar peticiones y retornar fotos según una consulta (esta función no esta en uso)
 exports.getAllWithQueryColors2= (req, res) =>
 {
   var data = [];
@@ -127,6 +125,7 @@ exports.getAllWithQueryColors2= (req, res) =>
 }
 
 //Se pudo haber hecho con axios.all, las dos soluciones funcionan semejante pues las peticiones no se bloquean entre si y solo se responde cuando todas culminaron
+//Función que retorna fotos ordenadas según color según una query
 exports.getAllWithQueryColors3=(req,res)=>{
 var contador=0;
 var data=[];
@@ -159,21 +158,3 @@ var data=[];
 
 
 }
-
-// exports.get= (req,res)=> {
-//   //https://www.flickr.com/photos/{user-id}/{photo-id}
-// var url ='https://www.flickr.com/photos/'+req.params.user_id+'/'+req.params.photo_id;
-//   console.log('Peticion Foto: '+url);
-//   Flickr.authenticate(flickrOptions, function(error, flickr) {
-//     flickr.photos.getRecent({
-//       api_key:flickrOptions.api_key,
-//       page: 1,
-//       per_page: 50,
-//       oauth_verifier:'307-035-246'
-//     }, function(err, result) {
-//       // result is Flickr's response
-//       console.log('Peticion Fotos: '+result);
-//       res.send(result);
-//     });
-//   });
-// }
