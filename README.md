@@ -31,8 +31,11 @@ Una vez realizado esto el backend esta escuchando en el puerto 1337, puede verif
 http://localhost:1337/
 
 API:
+
 http://localhost:1337/fotos                     retorna fotos recientes de ficlkr
+
 http://localhost:1337/fotos/:query              retorna fotos de ficlkr según la consulta
+
 http://localhost:1337/fotosColores/:query       retorna fotos de ficlkr según la consulta, además las fotos estan ordenadas por color, las primeras 6 moradas, las siguientes 6 azules y así..
 
 Frontend:
