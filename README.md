@@ -25,15 +25,11 @@ Nota: el archivo anterior no funcionara pues sus valores han sido alterados, per
 
 Ahora puede desplegar el backend con:
 
-node server.js
-
-Nota: No usar nodemon
+nodemon server.js
 
 Una vez realizado esto el backend esta escuchando en el puerto 1337, puede verificar que se encuentre desplegado en la siguiente URL:
 
 http://localhost:1337/
-
-En caso de que sea requerido si se pregunta ppor 'oauth_verifier' ingresar en el prompt: 307-035-246
 
 API:
 
