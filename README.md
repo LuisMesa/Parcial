@@ -1,5 +1,6 @@
 # Parcial
 Primer Parcial Web
+
 En el repositorio se encuentra el backend y frontend de una aplicación hecha con react, node.js y express que busca imagenes en flicker en tiempo real y las muestra como un arcoiris
 
 Backend:
