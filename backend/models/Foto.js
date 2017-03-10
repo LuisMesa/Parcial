@@ -15,7 +15,7 @@ var Flickr = require("flickrapi"),
 
 //Retorna fotos recientes
 exports.getAll= (req,res)=> {
-  Flickr.authenticate(flickrOptions, function(error, flickr) {
+  Flickr.tokenOnly(flickrOptions, function(error, flickr) {
     flickr.photos.getRecent({
       api_key:flickrOptions.api_key,
       page: 1,
@@ -33,7 +33,7 @@ exports.getAll= (req,res)=> {
 //Retorna fotos según query
 exports.getAllWithQuery= (req, res) =>
 {
-  Flickr.authenticate(flickrOptions, function (error, flickr)
+  Flickr.tokenOnly(flickrOptions, function (error, flickr)
   {
     console.log('query: '+req.params["query"] );
     flickr.photos.search({
@@ -67,7 +67,7 @@ function recursiva(req,res,data,i)
   }
   else
   {
-    Flickr.authenticate(flickrOptions, function (error, flickr)
+    Flickr.tokenOnly(flickrOptions, function (error, flickr)
     {
       console.log('query: '+req.params["query"]+','+colores[i] );
       flickr.photos.search({
@@ -97,7 +97,7 @@ exports.getAllWithQueryColors2= (req, res) =>
   var contador = 0;
   for (let i = 0; i < colores.length; i++)
   {
-    Flickr.authenticate(flickrOptions, function (error, flickr)
+    Flickr.tokenOnly(flickrOptions, function (error, flickr)
     {
       console.log('query: ' + req.params["query"] + ',' + colores[i]);
       flickr.photos.search({
@@ -130,7 +130,7 @@ exports.getAllWithQueryColors3=(req,res)=>{
 var contador=0;
 var data=[];
   colores.map((colorActual,i)=>{
-    Flickr.authenticate(flickrOptions, function (error, flickr)
+    Flickr.tokenOnly(flickrOptions, function (error, flickr)
     {
       console.log('query: ' + req.params["query"] + '' + colores[i]);
       flickr.photos.search({
