@@ -12,4 +12,5 @@ app.get('/',(req,res)=>{
 //Sub rutas
 app.get('/fotos',Foto.getAll);
 app.get('/fotos/:query',Foto.getAllWithQuery);
+app.get('/fotosColores/:query',Foto.getAllWithQueryColors3);
 };

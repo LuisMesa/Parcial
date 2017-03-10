@@ -1,13 +1,22 @@
 body
 {
-  background-color: dimgray;
+  background: linear-gradient(to left, #2980b9 , #2c3e50)!important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden;
 }
-/*.imagen*/
-/*{*/
-  /*width: 100%;*/
-  /*max-height: 200px;*/
-/*}*/
-.col-md-3
+.buscador
+{
+  height: 100px;
+  margin-top: 15px;
+
+}
+.info
+{
+  margin-bottom: 15px;
+  color:aliceblue;
+  text-align: center;
+}
+
+.col-md-2
 {
   padding-left: 0;
   padding-right: 0;
@@ -16,5 +25,37 @@ body
 }
 .imagen:hover
 {
-  border: 1px solid black;
+  border: 3px solid black;
+}
+.principalContainer
+{
+  margin-top: 50px;
+}
+.espacio
+{
+  margin: 5px;
+}
+input{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:20px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:70%;
+  border:none;
+  border-bottom:1px solid #757575;
+  margin-left: 15%;
+  /*margin-right: 10%;*/
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center!important;
+}
+
+.copyRight
+{
+  font-size: 90%;
+  padding-bottom:10px;
+}
+.copyRight a
+{
+  color: #1abc9c; ;
 }

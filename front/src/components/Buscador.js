@@ -13,18 +13,16 @@ class Buscador extends Component {
   buscar(query)
   {
     this.setState({query: query});
-    this.props.obtenerFotosWithQuery(query);
+    this.props.obtenerFotosWithQueryColor(query);
   }
 
 
   render()
   {
     return (
-        <div>
+              <input type="text" label="Type Something.." onChange={(event) => this.buscar(event.target.value)}/>
 
-              <input type="text" onChange={(event) => this.buscar(event.target.value)}/>
 
-        </div>
     )
   }
 }
