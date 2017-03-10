@@ -55,8 +55,8 @@ Ahora puede desplegar el frontend con:
 
 npm start
 
-Una vez realizado esto el backend esta escuchando en el puerto 8081, puede verificar que se encuentre desplegado en la siguiente URL:
+Una vez realizado esto el frontend esta escuchando en el puerto 8081, puede verificar que se encuentre desplegado en la siguiente URL:
 
 http://localhost:8081/
 
-En la pagina web desplegada puede buscar cualquier termino, por ejemplo: landscape. Esta consulta le mostrara 36 imagenes ordenadas según su color.
+En la pagina web desplegada puede buscar cualquier termino, por ejemplo: landscape. Esta consulta le mostrara 36 imagenes ordenadas según su color.<strong>Como añadido extra se puede hacer click sobre una imagen y esto abrira la imagen en flickr.com</strong>
