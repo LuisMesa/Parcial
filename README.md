@@ -3,7 +3,8 @@ Primer Parcial Web
 
 En el repositorio se encuentra el backend y frontend de una aplicación hecha con react, node.js y express que busca imagenes en flicker en tiempo real y las muestra como un arcoiris
 
-Backend:
+#Backend:
+
 Descargue la carpeta backend y ejecute el siguiente comando en esta misma:
 
 npm install
@@ -32,13 +33,20 @@ http://localhost:1337/
 
 API:
 
-http://localhost:1337/fotos                     retorna fotos recientes de ficlkr
+retorna fotos recientes de ficlkr:
 
-http://localhost:1337/fotos/:query              retorna fotos de ficlkr según la consulta
+http://localhost:1337/fotos                                   
 
-http://localhost:1337/fotosColores/:query       retorna fotos de ficlkr según la consulta, además las fotos estan ordenadas por color, las primeras 6 moradas, las siguientes 6 azules y así..
+retorna fotos de ficlkr según la consulta:
 
-Frontend:
+http://localhost:1337/fotos/:query              
+
+retorna fotos de ficlkr según la consulta, además las fotos estan ordenadas por color, las primeras 6 moradas, las siguientes 6 azules y así..
+
+http://localhost:1337/fotosColores/:query       
+
+#Frontend:
+
 Descargue la carpeta frontend y ejecute el siguiente comando en esta misma:
 
 npm install
