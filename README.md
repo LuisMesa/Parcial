@@ -59,4 +59,4 @@ Una vez realizado esto el backend esta escuchando en el puerto 8081, puede verif
 
 http://localhost:8081/
 
-En la pagina web desplegada puede buscar cualquier termino, por ejmeplo: landscape. Esta consulta le mostrara 36 imagenes ordenadas según su color.
+En la pagina web desplegada puede buscar cualquier termino, por ejemplo: landscape. Esta consulta le mostrara 36 imagenes ordenadas según su color.
